@@ -15,8 +15,9 @@ class ListField extends Component {
   onNextChange = e => {
     const { list } = this.state
     const val = e.target.value
+    console.log(val);
     if (val && !list.includes(val)) {
-      const newList = [...list, val]
+      const newList = [...list, { id: val }]
       this.setState({ list: newList})
       this.props.onChange(newList)
     }
