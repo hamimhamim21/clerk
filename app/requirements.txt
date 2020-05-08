@@ -20,6 +20,9 @@ whitenoise
 django-extensions
 ipython
 
+# Phone calls
+twilio
+
 # Development
 watchdog[watchmedo]
 
